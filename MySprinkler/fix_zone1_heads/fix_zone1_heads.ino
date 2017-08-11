@@ -1,0 +1,25 @@
+int valvepin = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(0, OUTPUT); // Output for Zone 1
+  StopIrrigation();
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+    StartIrrigation(0);
+}
+
+void StartIrrigation(int valve){
+      digitalWrite(valvepin, LOW);
+}
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+void StopIrrigation(){
+    digitalWrite(valvepin, HIGH);
+}
+///////////////////////////////////////////////////////////////////////////////////////
+
